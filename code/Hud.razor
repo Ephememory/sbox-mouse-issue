@@ -1,0 +1,17 @@
+﻿@using Sandbox;
+@using Sandbox.UI;
+
+@inherits RootPanel
+
+<root>
+	<label style="position:absolute; font-family: Poppins; font-weight: bold; font-size: 32px; color:white; z-index: 5;">Hold "@(Input.GetButtonOrigin(InputButton.Score))" to demonstrate.</label>
+	<Issue />
+</root>
+
+@code
+{
+	public Hud()
+	{
+		Game.RootPanel = this;
+	}
+}
